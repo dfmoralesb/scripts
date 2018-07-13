@@ -9,8 +9,8 @@ It can handle .gz files
 
 import sys,os
 
-APPS_HOME = "/home/diegomorales_briones/Apps/" # where rcorrector is located
-RCORRECTOR_CMD = 'perl '+APPS_HOME+"rcorrector/run_rcorrector.pl" # Basic command to call rcorrector
+APPS_HOME = "/home/dfmoralesb/botany_2018/apps" # where rcorrector is located
+RCORRECTOR_CMD = 'perl '+APPS_HOME+"/Rcorrector/run_rcorrector.pl" # Basic command to call rcorrector
 
 
 def rcorrector_se(se_fq,num_cores,DIR):

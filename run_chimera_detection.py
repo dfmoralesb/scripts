@@ -15,7 +15,7 @@ import sys,os
 import pandas as pd
 from Bio import SeqIO
 
-
+SCRIPTS_HOME = "/home/dfmoralesb/botany_2018/scripts/scripts_bot18_wksp/" # where rcorrector is located
 
 #This make a database for blast given a reference proteome
 def make_blast_db(proteome_ref,DIR):
@@ -93,7 +93,7 @@ def run_chimera_detection(blastx_output_file,DIR):
 		
 	else:
 		#detect_chimera_from_blastx_modifed(blastx_output_file,DIR)
-		cmd = ["python detect_chimera_from_blastx_modifed.py",blastx_output_file,DIR]
+		cmd = ["python",SCRIPTS_HOME+"detect_chimera_from_blastx_modifed.py",blastx_output_file,DIR]
 		print (" ".join(cmd))
 		os.system(" ".join(cmd))
 	
