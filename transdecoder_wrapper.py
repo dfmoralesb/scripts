@@ -49,7 +49,7 @@ def shorten_fasta_names(inname,outname,taxonID):
 	outfile = open(outname,"w")
 	for line in infile:
 		if line[0] == ">":
-			newid = (line.split(" ")[0]).split(".")[0].replace("TRINITY_","")
+			newid = (line.split(" ")[0]).split(".")[0].replace(">TRINITY_","")
 			outfile.write(">"+taxonID+"@"+newid+"\n")
 		else: outfile.write(line)
 	infile.close()
@@ -162,7 +162,7 @@ def check_pep_coverage_redundancy(blastpout,hitID="Beta",min_pident=60.0,log=Tru
 	
 	cds = files_transcript+".transdecoder.pep.gz" # seq id looks like
 	
-	# >TR10002|c0_g1_i1|m.6695 TR10002|c0_g1_i1|g.6695  ORF TR10002|c0_g1_i1|g.6695 TR10002|c0_g1_i1|m.6695 type:complete len:104 (-) TR10002|c0_g1_i1:834-1145(-)
+	# >TRINITY_DN999_c0_g1_i1.p1 TRINITY_DN999_c0_g1~~TRINITY_DN999_c0_g1_i1.p1  ORF type:internal len:484 (+),score=73.41,Beta@Bv6_131850_txhn_t1|79.45|0.0 TRINITY_DN999_c0_g1_i1:2-1450(+)
 	logfile = taxonID+".log"
 	cdsids = [] # all the ids in the cds file
 	infile = gzip.open(cds,"rb")
