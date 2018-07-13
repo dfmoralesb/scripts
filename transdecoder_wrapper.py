@@ -4,8 +4,8 @@ transdecoder and blastp must be in the path
 """
 
 MIN_FASTA = 1000 # miminal number of seqs expected in assembly and translation files
-BLASTP_DB_PATH = "/home/diegomorales_briones/Apps/TransDecoder/blastp_database/db" # the custom blast database
-CDS_REFERENCE = "/home/diegomorales_briones/Apps/TransDecoder/blastp_database/Beta.fa"
+BLASTP_DB_PATH = "/vol_c/data/databases/db" # the custom blast database
+CDS_REFERENCE = "/vol_c/data/databases/Beta.fa"
 
 
 import os,sys,shutil
