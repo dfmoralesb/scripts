@@ -199,7 +199,7 @@ def check_pep_coverage_redundancy(blastpout,hitID="Beta",min_pident=60.0,log=Tru
 		with open(logfile,"a") as outfile:
 			outfile.write(out)
 	print out
-	
+"""	
 def transrate_cds_ref(outcds,num_cores,reference=CDS_REFERENCE):
 	"""Using transrate to get basic stats and reference coverage from final cds"""
 	
@@ -225,7 +225,7 @@ def transrate_cds_ref(outcds,num_cores,reference=CDS_REFERENCE):
 	assert os.path.exists(results_name), "Transrate not completed"
 	
 	os.system("gzip "+cds_base_name)
-
+"""
 	
 if __name__ == "__main__":
 
