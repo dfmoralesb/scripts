@@ -80,4 +80,3 @@ def read_fasta_file(filename):
 	return seqlist
 
 
-
