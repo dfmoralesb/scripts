@@ -6,8 +6,8 @@ import sys, os, re
 from Bio import SeqIO
 
 
-CP_DATABASE="/vol_c/data/databases/chloroplast_land_plants_19_dec_2017.fa.bgz"
-MT_DATABASE="/vol_c/data/databases/mitochondria_land_plants_15_dec_2017.fa.bgz"
+CP_DATABASE="/home/dfmoralesb/botany_2018/data/databases/chloroplast_land_plants_19_dec_2017.fa.bgz"
+MT_DATABASE="/home/dfmoralesb/botany_2018/data/databases/mitochondria_land_plants_15_dec_2017.fa.bgz"
 
 def extract_order_cp(order,DIR):
 	assert os.path.exists(CP_DATABASE),"Cannot find the plastome database "+CP_DATABASE

@@ -9,7 +9,7 @@ import sys,os
 
 APPS_HOME = "/home/dfmoralesb/botany_2018/apps" # where Trimmomatic is located
 TRIMMOMATIC_CMD = 'java -jar '+APPS_HOME+"/Trimmomatic-0.36/trimmomatic-0.36.jar" # Basic command to call Trimmomatic
-TruSeq_ADAPTER = "/vol_c/data/databases/TruSeq_adapters.fa" # User provided adapters
+TruSeq_ADAPTER = "/home/dfmoralesb/botany_2018/data/databases/TruSeq_adapters.fa" # User provided adapters
 
 def trimmomatic_pe(pe_fq1,pe_fq2,num_cores,DIR):
 	
