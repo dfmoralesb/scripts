@@ -7,7 +7,7 @@ Change paths as needed
 
 import sys,os
 
-APPS_HOME = "/home/dfmoralesb/botany_2018/apps" # where Trimmomatic is located
+APPS_HOME = "/usr/local/bin/" # where Trimmomatic is located
 TRIMMOMATIC_CMD = 'java -jar '+APPS_HOME+"/Trimmomatic-0.36/trimmomatic-0.36.jar" # Basic command to call Trimmomatic
 TruSeq_ADAPTER = "/home/dfmoralesb/botany_2018/data/databases/TruSeq_adapters.fa" # User provided adapters
 

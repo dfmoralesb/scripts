@@ -9,7 +9,7 @@ It can handle .gz files
 
 import sys,os
 
-APPS_HOME = "/home/dfmoralesb/botany_2018/apps" # where rcorrector is located
+APPS_HOME = "/usr/local/bin/" # where rcorrector is located
 RCORRECTOR_CMD = 'perl '+APPS_HOME+"/Rcorrector/run_rcorrector.pl" # Basic command to call rcorrector
 
 
